@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website-Edu | Branding Pendidikan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #15170f;
+      color: #f1f1f1;
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      background-color: #0a0f2c !important;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: #00bfff !important;
+      text-shadow: 0 2px 8px #00bfff55;
+    }
+    .hero {
+      background: url('image/b.jpeg') center/cover no-repeat;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: #ffffff;
+    }
+    section {
+      padding: 80px 0;
+    }
+    .section-title {
+      color: #00bfff;
+    }
+    .card {
+      background-color: #1a1c29;
+      border: none;
+      color: #ffffff;
+    }
+    .card-icon {
+      font-size: 3rem;
+      color: #00bfff;
+    }
+    .gallery-img {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+    .gallery-img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #0a0f2c;
+    }
+.unit-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 18px;
+}
+.unit-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 36px #00bfff44;
+}
+.unit-icon {
+  background: #00bfff22;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 2.5rem;
+  color: #00bfff;
+  box-shadow: 0 2px 12px #00bfff33;
+}
+.unit-img-wrap {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+.unit-img-wrap img {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+}
+.unit-img-wrap:hover img {
+  transform: scale(1.08) rotate(-1deg);
+  box-shadow: 0 8px 32px #00bfff55;
+  border-color: #00bfff;
+  z-index: 2;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .unit-card { margin-bottom: 2rem; }
+}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+  <div class="container justify-content-center">
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2 mx-auto" href="#">
+      Rayhan education school
+    </a>
+    <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#profil">Profil</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#unit">Unit</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#gallery">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold px-3" href="#news">Berita</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero" id="home" data-aos="fade-up">
+  <div class="hero-content">
+    <p class="lead">SELAMAT DATANG</p>
+    <h1 class="display-4 fw-bold">Rayhan Education School</h1>
+    <p class="lead">Sekolah bukan hanya tempat belajar, tetapi tempat tumbuh menjadi pribadi yang berkarakter, mandiri, dan berprestasi</p>
+    <a href="#profil" class="btn btn-outline-info mt-4 px-4">Pelajari Lebih Lanjut</a>
+  </div>
+</header>
+
+<!-- Profil -->
+<div id="profil-section"></div>
+
+<!-- Unit Sekolah -->
+<div id="unit-section"></div>
+
+<!-- Gallery Section Fullscreen with Frame -->
+<div id="galeri-section"></div>
+
+<!-- News & Event -->
+<div id="berita-section"></div>
+
+<!-- Footer -->
+<footer class="footer mt-auto py-4 bg-dark text-white position-relative" style="box-shadow: 0 -2px 24px #00bfff22; border-top: 1.5px solid #00bfff44;">
+  <div class="container text-center">
+    <div class="mb-2">
+      <a class="fw-bold fs-5 text-white text-decoration-none" style="letter-spacing: 1px;">Rayhan Educational School</a>
+    </div>
+    <div class="mb-3">
+      <!-- Tombol sosial media -->
+      <a href="https://instagram.com/username_anda" target="_blank" class="btn btn-outline-light btn-sm rounded-pill mx-1" title="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://facebook.com/username_anda" target="_blank" class="btn btn-outline-light btn-sm rounded-pill mx-1" title="Facebook">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-outline-success btn-sm rounded-pill mx-1" title="WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <a href="https://x.com/username_anda" target="_blank" class="btn btn-outline-light btn-sm rounded-pill mx-1" title="X (Twitter)">
+        <i class="bi bi-twitter-x"></i>
+      </a>
+      <a href="mailto:info@rayhan-education.sch.id" class="btn btn-outline-info btn-sm rounded-pill mx-1" title="Email">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+    <div class="small">&copy; 2025 Rayhan Educational School. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- Tambahkan trigger tombol di navbar -->
+<script>
+  // Contoh: buka modal login saat klik tombol login di navbar
+  document.addEventListener('DOMContentLoaded', function() {
+    var loginBtn = document.querySelector('.btn-login-modal');
+    if(loginBtn) {
+      loginBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        var loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+        loginModal.show();
+      });
+    }
+  });
+</script>
+
+<script>
+// Fungsi untuk load file HTML ke dalam section
+function loadSection(id, file) {
+  fetch(file)
+    .then(res => res.text())
+    .then(html => { document.getElementById(id).innerHTML = html; });
+}
+document.addEventListener('DOMContentLoaded', function() {
+  loadSection('profil-section', 'profil.html');
+  loadSection('unit-section', 'unit-sekolah.html');
+  loadSection('galeri-section', 'galeri.html');
+  loadSection('berita-section', 'berita.html');
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 900,
+    offset: 60
+  });
+</script>
+</body>
+</html>
